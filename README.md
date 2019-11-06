@@ -20,10 +20,12 @@ and wait for a client to send message.
 $ ./server
 
 ### Example scenario
+```
 Enter server port number: 2468
 Received request for public key of fsuarez@uh.edu
 Received request for public key of mleontov@uh.edu
 Received request for public key of test@uh.edu
+```
 
 
 ## Run client side
@@ -37,26 +39,32 @@ corresponding public key.
 $ ./client
 
 ### Example scenario - Server has the corresponding key
+```
 Enter server host name: localhost
 Enter server port number: 2468
 Enter the email address of a user:
 fsuarez@uh.edu
 The public key of fsuarez@uh.edu is:
 0xfaeedR026974530159b1912579341fb731754695200000753671fff
+```
 
 
 ### Example scenario - Server doesn't have the corresponding key
+```
 Enter server host name: localhost
 Enter server port number: 2468
 Enter the email address of a user:
 test@uh.edu
 The database had no public key for user test@uh.edu
+```
 
 
 ### Example scenario - Server is not running
+```
 Enter server host name: localhost
 Enter server port number: 2468
 Connection Failed
+```
 
 
 
